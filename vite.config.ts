@@ -10,6 +10,9 @@ export default defineConfig({
       '@': '/src'
     }
   },
+  build: {
+    outDir: 'docs'
+  },
   css: {
     // postcss: {
     //   plugins: [

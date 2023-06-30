@@ -1,7 +1,7 @@
 {
   "name": "my-py-storybook",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "homepage": "https://github.com/panyongbing-top/my-storybook-ui",
   "scripts": {
@@ -12,6 +12,12 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "pub": "npm run build && npm publish --access=public"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index-c7e05d32.js",
+      "import": "./dist/index-c7e05d32.js"
+    }
   },
   "dependencies": {
     "antd": "^5.6.3",
